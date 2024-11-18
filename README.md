@@ -19,3 +19,15 @@ The next step involves applying stemming to each word using the **PorterStemmer*
 ### Feature extraction
 
 The textual data is converted into numerical features using the **Term Frequency-Inverse Document Frequency (TF-IDF)** vectorization technique. This method quantifies the importance of words within the dataset by balancing their frequency in individual comments against their prevalence across the entire dataset. This transformation is a critical step in preparing the data for effective training and evaluation of machine learning models.
+
+### Model training
+
+For sentiment classification, a Logistic Regression model is chosen due to its simplicity and effectiveness in handling text classification tasks. The model is trained on the transformed features, enabling it to learn patterns in the data.
+
+### Model evaluation
+
+This model evaluated using accuracy_score for both traing and test data.
+
+### Save trained model
+
+The trained machine learning model can be efficiently saved using Python's **pickle** library. By storing the model as a `.sav` file, it ensures easy reuse for future predictions without the need for retraining, thereby streamlining the deployment process.
